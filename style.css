@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* headerเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a span {
+    color: red;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 500px;
+}
+
+.text-box h1 {
+    font-size: 50px;
+}
+
+.text-box iframe {
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.text-box a {
+    color: white;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 2px solid salmon;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.text-box a:hover {
+    background-color: salmon;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* media querry */
+
+@media(max-width:700px) {
+    .text-box {
+        margin-top: 400px;
+    }
+    .text-box h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .text-box iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links ul {
+        margin-top: 50px;
+    }
+    .nav-links {
+        position:fixed;
+        background: salmon;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* จบmedia querry */
+
+/* จบheaderเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+/* campangeเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊  */
+
+.campange {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.campangebg {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/informationbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campange-col {
+    flex-basis: 31%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+}
+
+.campange-col:hover {
+    box-shadow: 0 0 20px 0px gray;
+    background-color: gray;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* media querry */
+
+/* จบcampangeเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+/* information เขียนเองไม่เชื่อมาดูมิจิ๊ */
+
+.information {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color:white;
+}
+.information h1{
+    color:salmon;
+}
+
+.information-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 5px solid salmon;
+}
+
+.information-col:hover {
+    box-shadow: 0 0 20px 0px sandybrown;
+}
+
+.information-col img {
+    width: 100%;
+}
+
+.information-col h3{
+    color:sandybrown;
+}
+.information-col p{
+    color:sandybrown;
+}
+.information-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:700px) {
+    .information-container {
+        flex-direction: column;
+    }
+}
+
+/* จบ information เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+/* join us  เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+.join {
+   
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color:white;
+    margin-bottom: 100px;
+  
+}
+
+.join-content {
+    flex-basis: 31%;
+    background: transparent;
+    border: 5px solid salmon;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.join-containerbig{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.join-content h4{
+    color:black;
+}
+.join h1{
+    color:salmon;
+    margin-bottom: 20px;
+}
+.join-content a{
+    color:black;
+    text-decoration: none;
+}
+
+.join-content img {
+    width: 70px;
+    
+}
+
+.join-content:hover {
+    box-shadow: 0 0 20px 0px sandybrown;
+}
+.join-container{
+    
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:700px) {
+    .join-container {
+        flex-direction: column;
+    }
+    .join-content{
+        margin-bottom: 20px;
+    }
+}
+/* จบjoin us  เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+
+/* footer เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */
+.footer{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color:salmon;
+    
+}
+.reference a{
+    text-decoration: none;
+}
+.reference h1{
+    color:white;
+}
+
+/* footer จบเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ */

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- หลักฐานที่บอกว่าเขียนเองจนเสร็จ แต่ว่าอาจดูได้ไม่จบเพราะเปิดเพลงฟังแล้วติดลิขสิทธิ์
+https://www.youtube.com/watch?v=QsXol91-iDA -->
+
+<!-- คลิปที่ใช้ดูและเขียนตาม
+https://www.youtube.com/watch?v=oYRda7UtuhA&t=3212s -->
+
+<body>
+    <!-- headerเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+    <section class="header" id="header">
+        <nav>
+            <a href="">บอกรัก<span>บอกลด</span> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#campangebg">Campange</a></li>
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#join">Join us</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box">
+            <h1>ยินดีต้อนรับทุกท่านเข้าสู่แคมเปญบอกรักบอกลด</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0JfHEhXWLzk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br><br> <a href="#join" type="button">เข้าร่วมแคมเปญ</a>
+        </div>
+    </section>
+    <!-- จบheaderเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+    <!-- campangeเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+    <section class="campangebg" id="campangebg">
+        <section class="campange">
+            <h1>เกี่ยวกับแคมเปญ</h1>
+            <p>บอกรักบอกลดคือแคมเปญที่จะมาเชิญชวนให้ทุกคนร่วมกันบอกรักคนที่เรารักด้วยการบอกให้เขาลดโดยคำว่าลดในที่นี้คือลดความเสี่ยงในการเกิดโรคเบาหวานเช่น
+                ลดน้ำหนัก ลดของหวาน
+                ลดเครื่่องดื่มแอลกอฮอล์ ลดอาหารรสจัดเป็นต้น
+                โดยทุกคนสามารถเข้าร่วมกับเราได้โดยบอกรักคนที่คุณรักผ่านช่องทาง
+                Social media ต่างๆเช่น Facebook, Instagram, Tiktok
+
+            </p>
+            <div class="row">
+                <div class="campange-col">
+                    <h3>ลดน้ำหนัก</h3>
+                    <p>
+                        การลดน้ำหนักนั้นมีข้อดีมากมายได้แก่ช่วยให้หัวใจแข็งแรงขึ้น
+                        ป้องกันและลดความเสี่ยงต่อโรค เสริมสร้างการทำงานของสมอง
+                        กระตุ้นให้เกิดการฟื้นตัวได้เร็วขึ้นในกรณีที่สมองได้รับบาดเจ็บ
+
+                    </p>
+                </div>
+                <div class="campange-col">
+                    <h3>ลดของหวาน</h3>
+                    <p>
+                        การบริโภคน้ำตาลอาจจะทำให้เรามีแรงมากขึ้นในช่วงแรกที่ทานเข้าไป
+                        แต่พอเวลาผ่านไปสักพักร่างกายก็จะกลับมาอ่อนเพลียเหมือนเดิม
+                        นั่นก็เพราะน้ำตาลจะเข้าไปขัดขวางการสะสมพลังงานของร่างกาย
+                        แถมยังทำให้ระดับน้ำตาลในเลือดผกผัน อันเป็นสาเหตุทำให้เกิดอาการอ่อนเพลีย
+
+                    </p>
+                </div>
+                <div class="campange-col">
+                    <h3>ลดเครื่่องดื่มแอลกอฮอล์</h3>
+                    <p>
+                        การลดเตรื่องดื่มแอลกอฮอล์ช่วยให้ความจำดีขึ้น เหล้าเป็นสาเหตุหนึ่งที่ทำให้สมองเสื่อม
+                        เพราะพิษของมันจะเข้าไปทำลายเซลล์สมอง หากเลิกดื่มได้จะทำให้ความจำต่าง ๆ
+                        ดีขึ้นกว่าเดิม พุงยุบ น้ำหนักลดลง เครื่องดื่มแอลกอฮอล์แต่ละชนิดมีแคลอรีสูงมาก
+                        เช่น เบียร์ 1 กระป๋อง ขนาด 350 มิลลิลิตร ให้พลังงาน 137 กิโล แคลอรี, ไวน์ 1 แก้ว
+                        ขนาด 100 มิลลิลิตร ให้พลังงาน 75 แคลอรี่ ยิ่งดื่มมากก็ยิ่งไปสะสมที่พุง
+                        และทำให้น้ำหนักขึ้น
+
+                    </p>
+                </div>
+                <div class="campange-col">
+                    <h3>ลดอาหารลดจัด</h3>
+                    <p>
+                        อาหารสจัดที่เป็นอันตรายต่อสุขภาพ อาหารเค็มจัด เช่น อาหารที่ผ่านการถนอมอาหาร
+                        อาหารแปรรูป อาหารหมักดอง เป็นต้น อาหารหวานจัด เช่น ขนมไทย น้ำอัดลม
+                        น้ำหวาน เป็นต้น อาหารมันจัด เช่น เนื้อสัตว์ติดมัน อาหารประเภทกะทิ เป็นต้น
+
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- จบcampangeเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+
+    <!-- Information เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+    <section class="information" id="information">
+        <h1>ความรู้เกี่ยวกับโรคเบาหวาน</h1>
+
+        <div class="information-container">
+
+            <div class="information-col">
+
+                <h3>
+                    โรคเบาหวาน(Diabetes) คือ</h3>
+                <p>
+                    โรคที่เซลล์ร่างกายมีความผิดปกติในขบวนการเปลี่ยนน้ำตาลในเลือดให้เป็นพลังงาน
+                    โดยขบวนการนี้เกี่ยวข้องกับอินซูลินซึ่งเป็นฮอร์โมนที่สร้างจากตับอ่อนเพื่อใช้ควบคุม
+                    ระดับน้ำตาลในเลือดเมื่อน้ำตาลไม่ได้ถูกใช้จึงทำให้ระดับน้ำตาลในเลือดสูงขึ้นกว่าระดับปกติ
+                    โรคเบาหวานแบ่งเป็น 4 ชนิด ตามสาเหตุของการเกิดโรค</p>
+                <img src="https://www.nayokhospital.go.th/dept/NCDs-Center/wp-content/uploads/2019/03/newscms_thaihealth_c_abgjnoqrsz17.jpg"
+                    alt="chubby girl close her face with her hand">
+            </div>
+
+
+
+            <div class="information-col">
+
+                <h3>ชนิดของโรคเบาหวาน</h3>
+                <p>
+                    1. โรคเบาหวานชนิดที่ 1 (type 1 diabetes mellitus, T1DM)
+                    เกิดจากเซลล์ตับอ่อนถูกทำลายจากภูมิคุ้มกันของร่างกาย ทำให้ขาดอินซูลิน มักพบในเด็ก
+                    2. โรคเบาหวานชนิดที่ 2 (type 2 diabetes mellitus, T1DM) เป็นชนิดที่พบบ่อยที่สุด ร้อยละ 95
+                    ของผู้ป่วยเบาหวานทั้งหมด เกิดจากภาวะดื้อต่ออินซูลิน มักพบในผู้ใหญ่ที่มีน้ำหนักเกินหรืออ้วนร่วมด้วย
+                </p>
+                <img src="https://www.sbuynews.com/wp-content/uploads/2020/06/21-8.jpg" alt="img">
+
+            </div>
+
+
+
+            <div class="information-col">
+
+                <h3>ชนิดของโรคเบาหวาน</h3>
+                <p>
+                    3. โรคเบาหวานขณะตั้งครรภ์ (gestational diabetes mellitus, GDM) เป็นโรคเบาหวานที่เกิดขึ้นขณะตั้งครรภ์
+                    มักเกิดเมื่อไตรมาส 2-3 ของการตั้งครรภ์
+                    4. โรคเบาหวานที่มีสาเหตุจำเพาะ (specific types of diabetes due to other causes) มีได้หลายสาเหตุ เช่น
+                    โรคทางพันธุกรรม โรคของตับอ่อน โรคทางต่อมไร้ท่อ ยาบางชนิด เป็นต้นดจากภาวะดื้อต่ออินซูลิน
+                    มักพบในผู้ใหญ่ที่มีน้ำหนักเกินหรืออ้วนร่วมด้วย
+                </p>
+                <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1515401028/attached_image_th/%E0%B9%80%E0%B8%9A%E0%B8%B2%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%93%E0%B8%B0%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%A0%E0%B9%8C-pobpad.jpg"
+                    alt="img">
+            </div>
+
+
+
+            <div class="information-col">
+               
+                <h3>โรคเบาหวานและคนไทย</h3>
+                 <p>
+                โรคเบาหวานเป็นโรคเรื้อรังที่ส่งผลกระทบต่อสุขภาพหลายระบบ ทั้ง ฟันและเหงือก ตา ไต หัวใจ สมอง
+                และหลอดเลือดแดง รวมทั้งผลกระทบต่อการดำเนินชีวิต,
+                เศรษฐสังคม(socioeconomic effect) โดยมีการคาดการจาก International diabetes
+                ationว่าจะมีจำนวนผู้ป่วยเพิ่มขึ้น 366 ล้านคน ในปีค.ศ.2011 เป็น 552 ล้านคน
+                ในปีค.ศ. 2030 สำหรับประเทศไทย พบผู้ป่วยเบาหวาน 3.5 ล้านคนและมีมูลค่าการรักษา
+                47,596 ล้านบาทต่อปี
+                </p>
+                <img src="data:image/jpeg;base64,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"
+                    alt="chubby girl close her face with her hand">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- จบInformation เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+    <!-- Join เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+    <section class="join" id="join">
+        <h1>JOIN US</h1>
+        <div class="join-containerbig">
+            <div class="join-container">
+
+                <div class="join-content">
+                    <a
+                        href="https://www.facebook.com/hashtag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94/"><img
+                            src="https://cdn.icon-icons.com/icons2/2108/PNG/512/facebook_icon_130940.png" /></a>
+                    <h4>Facebook</h4>
+                    <a
+                        href="https://www.facebook.com/hashtag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94/">#บอกรักบอกลด</a>
+                    <br>
+                    <a
+                        href="https://www.facebook.com/hashtag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94/">#Bokrakboklod</a>
+
+
+                </div>
+
+                <div class="join-content">
+                    <a href="https://www.instagram.com/explore/tags/bokrakboklod/"> <img
+                            src="https://www.mmthailand.com/wp-content/uploads/2020/04/ig-icon.png" /></a>
+                    <h4>Instagram</h4>
+                    <a
+                        href="https://www.instagram.com/explore/tags/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94/">#บอกรักบอกลด</a>
+                    <br>
+                    <a href="https://www.instagram.com/explore/tags/bokrakboklod/">#Bokrakboklod</a>
+
+                </div>
+
+                <div class="join-content">
+                    <a
+                        href="https://www.tiktok.com/tag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94"><img
+                            src="https://seeklogo.com/images/T/tiktok-share-icon-black-logo-29FFD062A0-seeklogo.com.png" /></a>
+                    <h4>Tiktok</h4>
+                    <a
+                        href="https://www.tiktok.com/tag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94">#บอกรักบอกลด</a>
+                    <br>
+                    <a
+                        href="https://www.tiktok.com/tag/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%94">#Bokrakboklod</a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- จบJoin เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+    <!-- footerเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+    <section class="footer">
+
+        <div class="reference">
+
+            <h2>อ้างอิง</h2>
+            <a
+                href=" https://www.dmthai.org/index.php/knowledge/for-normal-person/health-information-and-articles/health-information-and-articles-old-3/846-2019-04-20-01-49-18">
+
+                <p>
+                    https://www.dmthai.org/index.php/knowledge/for-normal-person/health-information-and-articles/health-information-and-articles-old-3/846-2019-04-20-01-49-18
+                </p>
+            </a>
+            <a href="https://www.phukethospital.com/th/ไม่มีหมวดหมู่-en/diabetes/-en/diabetes/">
+                <p> https://www.phukethospital.com/th/ไม่มีหมวดหมู่-en/diabetes/-en/diabetes/</p>
+            </a>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- จบ footerเขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+
+
+    <!-- javascript hamburgur เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- จบ javascript hamburgur เขียนเองแต่ดูวิดีโอไม่เชื่อมาดูมิจิ๊ -->
+</body>
+
+</html>
